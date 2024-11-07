@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Form</title>
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+<section class="multi_step_form">
+    <form id="msform">
+        <!-- Title -->
+        <div class="tittle">
+            <h2>Complete Your Verification</h2>
+            <p>To use this service, please complete the verification process.</p>
+        </div>
+
+        <!-- Progress Bar -->
+        <ul id="progressbar">
+            <li class="active">Verify Phone</li>
+            <li>Complete Verification</li>
+        </ul>
+
+        <!-- Phone Verification Step -->
+        <fieldset>
+            <h3>Setup your Phone</h3>
+            <h6>We will send you an SMS for confirmation.</h6>
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="tel" id="phone" class="form-control" placeholder="+91">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="+911234567890">
+                </div>
+            </div>
+            <button type="button" class="action-button previous_button">Back</button>
+            <button type="button" class="next action-button">Confirm</button>
+        </fieldset>
+
+        <!-- Completion Step -->
+        <fieldset>
+            <h3>Finish Verification</h3>
+            <p>Your phone verification is complete. Thank you for confirming.</p>
+            <button type="button" class="action-button previous previous_button">Back</button>
+            <a href="#" class="action-button">Finish</a>
+        </fieldset>
+    </form>
+</section>
+</body>
+</html>
