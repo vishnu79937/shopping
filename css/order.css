@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.multi_step_form {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+}
+
+.tittle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tittle h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+.tittle p {
+    font-size: 15px;
+    color: #666;
+}
+
+#progressbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+}
+
+#progressbar li {
+    width: 50%;
+    text-align: center;
+    color: #99a2a8;
+    font-size: 13px;
+    position: relative;
+}
+
+#progressbar li.active {
+    color: #5cb85c;
+}
+
+#progressbar li::before {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background: #eaf0f4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+#progressbar li.active::before {
+    background: #5cb85c;
+}
+
+fieldset {
+    display: none;
+    padding: 20px;
+}
+
+fieldset:first-of-type {
+    display: block;
+}
+
+h3 {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+h6 {
+    font-size: 15px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #5cb85c;
+}
+
+.action-button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.action-button:hover {
+    background-color: #4ca64c;
+}
+
+.previous_button {
+    background-color: #ddd;
+    color: #666;
+}
+
+.previous_button:hover {
+    background-color: #bbb;
+}
